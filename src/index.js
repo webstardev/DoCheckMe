@@ -5,7 +5,6 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-// import "./Assets/styles/maicons.css";
 import "./Assets/styles/animate.css";
 import "./Assets/styles/mobster.css";
 import "./index.css";
