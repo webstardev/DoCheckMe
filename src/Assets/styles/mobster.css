@@ -3025,6 +3025,7 @@ hr {
   border-radius: 10px;
   background-color: white;
   align-items: center;
+  overflow: hidden;
 }
 
 #pricing .pricing-table .top-pane {
@@ -3045,6 +3046,21 @@ hr {
 #pricing .pricing-table .price-line h5 {
   color: #ccc;
   padding-bottom: 10px;
+}
+
+#pricing h6 {
+  color: #999ca5;
+}
+
+#pricing .btn-plan {
+  width: 214px;
+  height: 59px;
+  border-radius: 30px;
+  background-color: #2500f9;
+  color: white;
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
 
 #footer {
