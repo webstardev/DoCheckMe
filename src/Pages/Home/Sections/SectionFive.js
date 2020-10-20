@@ -76,7 +76,7 @@ const SectionFive = () => {
 };
 
 const ComponentContainer = styled.div`
-  padding-bottom: 0;
+  padding-top: 0;
 `;
 
 const StyledContainer = styled(Container)`

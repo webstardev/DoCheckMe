@@ -13,17 +13,146 @@ const SectionSix = () => {
       style={{ backgroundImage: `url(${HeroBg})` }}
     >
       <StyledContainer>
-        <Title className="wow zoomIn" data-wow-delay="100ms">
-          Our Client
-        </Title>
+        <Title className="wow zoomIn">Our Client</Title>
         <Row>
-          <Col md={6} ms={6} xs={12}>
+          <Col
+            md={6}
+            ms={6}
+            xs={12}
+            className="user-col wow zoomIn"
+            data-wow-delay="100ms"
+          >
             <UserInfo>
-              <div
-                className="img-div"
-                style={{ backgroundImage: `url(${AvatarImg})` }}
-                alt="avatar"
-              ></div>
+              <div className="user-avatar">
+                <div
+                  className="img-div"
+                  style={{ backgroundImage: `url(${AvatarImg})` }}
+                  alt="avatar"
+                ></div>
+              </div>
+              <div className="avatar-content">
+                <h5
+                  style={{ fontWeight: 800, color: "#242f51" }}
+                  className="mt-1 mb-1"
+                >
+                  ZOLTAN NEMETH
+                </h5>
+                <h5 style={{ color: "#929396", margin: 0 }}>
+                  CEO of Pixler Lab
+                </h5>
+              </div>
+            </UserInfo>
+          </Col>
+          <Col
+            md={6}
+            ms={6}
+            xs={12}
+            className="user-col wow zoomIn"
+            data-wow-delay="200ms"
+          >
+            <UserInfo>
+              <div className="user-avatar">
+                <div
+                  className="img-div"
+                  style={{ backgroundImage: `url(${AvatarImg})` }}
+                  alt="avatar"
+                ></div>
+              </div>
+              <div className="avatar-content">
+                <h5
+                  style={{ fontWeight: 800, color: "#242f51" }}
+                  className="mt-1 mb-1"
+                >
+                  ZOLTAN NEMETH
+                </h5>
+                <h5 style={{ color: "#929396", margin: 0 }}>
+                  CEO of Pixler Lab
+                </h5>
+              </div>
+            </UserInfo>
+          </Col>
+          <Col
+            md={6}
+            ms={6}
+            xs={12}
+            className="offset-md-3 user-col wow zoomIn"
+            data-wow-delay="400ms"
+          >
+            <UserInfo>
+              <div className="user-avatar">
+                <div
+                  className="img-div"
+                  style={{ backgroundImage: `url(${AvatarImg})` }}
+                  alt="avatar"
+                ></div>
+              </div>
+              <div className="avatar-content">
+                <h5
+                  style={{ fontWeight: 800, color: "#242f51" }}
+                  className="mt-1 mb-1"
+                >
+                  ZOLTAN NEMETH
+                </h5>
+                <h5 style={{ color: "#929396", margin: 0 }}>
+                  CEO of Pixler Lab
+                </h5>
+              </div>
+            </UserInfo>
+          </Col>
+          <Col
+            md={6}
+            ms={6}
+            xs={12}
+            className="user-col wow zoomIn"
+            data-wow-delay="300ms"
+          >
+            <UserInfo>
+              <div className="user-avatar">
+                <div
+                  className="img-div"
+                  style={{ backgroundImage: `url(${AvatarImg})` }}
+                  alt="avatar"
+                ></div>
+              </div>
+              <div className="avatar-content">
+                <h5
+                  style={{ fontWeight: 800, color: "#242f51" }}
+                  className="mt-1 mb-1"
+                >
+                  ZOLTAN NEMETH
+                </h5>
+                <h5 style={{ color: "#929396", margin: 0 }}>
+                  CEO of Pixler Lab
+                </h5>
+              </div>
+            </UserInfo>
+          </Col>
+          <Col
+            md={6}
+            ms={6}
+            xs={12}
+            className="user-col wow zoomIn"
+            data-wow-delay="400ms"
+          >
+            <UserInfo>
+              <div className="user-avatar">
+                <div
+                  className="img-div"
+                  style={{ backgroundImage: `url(${AvatarImg})` }}
+                  alt="avatar"
+                ></div>
+              </div>
+              <div className="avatar-content">
+                <h5
+                  style={{ fontWeight: 800, color: "#242f51" }}
+                  className="mt-1 mb-1"
+                >
+                  ZOLTAN NEMETH
+                </h5>
+                <h5 style={{ color: "#929396", margin: 0 }}>
+                  CEO of Pixler Lab
+                </h5>
+              </div>
             </UserInfo>
           </Col>
         </Row>
@@ -39,7 +168,13 @@ const ComponentContainer = styled.div`
   padding: 0;
 `;
 
-const StyledContainer = styled(Container)``;
+const StyledContainer = styled(Container)`
+  .user-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+`;
 
 const Title = styled.h1`
   font-size: 41px;
@@ -50,18 +185,35 @@ const Title = styled.h1`
 `;
 
 const UserInfo = styled.div`
+  width: auto;
+  height: 102px;
+  display: flex;
+  align-items: center;
+
   .user-avatar {
     width: 102px;
     height: 102px;
+    border-radius: 51px;
     border: 1px solid #671afe;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 
     .img-div {
-      border: 5px solid white;
-      border-radius: 41px;
+      width: 98px;
+      height: 98px;
+      border: 3px solid white;
+      border-radius: 50px;
     }
+  }
+  .avatar-content {
+    z-index: 1;
+    margin-left: -13px;
+    border: 1px solid #671afe;
+    padding: 5px 15px 5px 19px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
   }
 `;
 
