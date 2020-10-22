@@ -8,13 +8,13 @@ const SectionSeven = () => {
           <div className="row justify-content-center align-items-center">
             <div className="col-lg-12 wow fadeInUp">
               <h1 className="title mb-4 text-center">Pricing</h1>
-              <p className="mb-5 text-center">
+              <p className=" mb-5 text-center">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
                 inventore maxime ipsa eligendi quibusdam velit maiores adipisci
                 odit, exercitationem cumque iusto at debitis reiciendis a, ipsum
                 aliquam reprehenderit. Sed, delectus.
               </p>
-              <div className="pricing-date-picker mb-5">
+              <div className="pricing-date-picker">
                 <a href="#" className="active">
                   Monthly
                 </a>
@@ -24,7 +24,7 @@ const SectionSeven = () => {
             <div className="col-lg-12">
               <div className="row">
                 <div className="col-md-6">
-                  <div className="pricing-table pb-5 wow fadeInUp">
+                  <div className="pricing-table mt-5 pb-5 wow fadeInUp">
                     <div className="top-pane py-5 w-100">
                       <div className="price-line mt-5 mb-4">
                         <h1 className="text-center">$0</h1>
@@ -43,7 +43,7 @@ const SectionSeven = () => {
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="pricing-table pb-5 wow fadeInUp">
+                  <div className="pricing-table mt-5 pb-5 wow fadeInUp">
                     <div className="top-pane py-5 w-100">
                       <div className="price-line mt-5 mb-4">
                         <h1 className="text-center">$99</h1>

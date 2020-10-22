@@ -2450,9 +2450,7 @@ hr {
   }
 }
 
-/* Carousel */
-
-.stack-carousel .owl-item {
+@media (max-width: ) /* Carousel */ .stack-carousel .owl-item {
   padding: 50px 12px;
   opacity: 0.3;
   transition: all 0.3s ease;
@@ -3099,6 +3097,18 @@ hr {
   border: none;
   outline: none;
   box-shadow: none;
+}
+
+@media (max-width: 991px) {
+  #pricing .content {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 479px) {
+  #pricing .content {
+    padding: 40px 20px;
+  }
 }
 
 #footer {
