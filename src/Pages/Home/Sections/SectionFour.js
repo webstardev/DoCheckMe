@@ -50,6 +50,10 @@ const StyledContainer = styled(Container)`
       flex: 0 0 100%;
       max-width: 100%;
     }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
   .right-panel {
     @media (max-width: 992px) {

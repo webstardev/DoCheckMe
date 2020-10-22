@@ -166,6 +166,10 @@ const ComponentContainer = styled.div`
   background-position: center center;
   background-repeat: no-repeat;
   padding: 0;
+
+  @media (max-width: 768px) {
+    background-size: 200%;
+  }
 `;
 
 const StyledContainer = styled(Container)`
@@ -182,6 +186,10 @@ const Title = styled.h1`
   font-weight: 800;
   margin-top: 42px;
   text-align: center;
+
+  @media (max-width: 767px) {
+    margin-bottom: 40px;
+  }
 `;
 
 const UserInfo = styled.div`
@@ -189,6 +197,8 @@ const UserInfo = styled.div`
   height: 102px;
   display: flex;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
   .user-avatar {
     width: 102px;

@@ -13,7 +13,7 @@ const SectionFive = () => {
       <StyledContainer>
         <Row>
           <Col md={5} sm={12} className="left-panel">
-            <Title className="wow zoomIn">How It is Work</Title>
+            <Title className="wow zoomIn">Featured USers</Title>
             <Description className="wow zoomIn" data-wow-delay="100ms">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
@@ -86,11 +86,17 @@ const StyledContainer = styled(Container)`
       flex: 0 0 100%;
       max-width: 100%;
     }
+    @media (max-width: 768px) {
+      padding-top: 50px;
+    }
   }
   .right-panel {
     @media (max-width: 992px) {
       flex: 0 0 100%;
       max-width: 100%;
+    }
+    @media (max-width: 768px) {
+      display: none;
     }
   }
   .hero-bg {
@@ -121,6 +127,8 @@ const Description = styled.p`
 `;
 
 const Content = styled.div`
+  display: flex;
+  flex-direction: column;
   .item-div {
     display: flex;
     .icon-div {
@@ -142,6 +150,9 @@ const Content = styled.div`
     outline: none;
     box-shadow: none;
     background-color: #2500f9;
+    @media (max-width: 768px) {
+      align-self: center;
+    }
   }
 `;
 
