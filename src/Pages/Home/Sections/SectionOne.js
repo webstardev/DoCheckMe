@@ -1,67 +1,34 @@
 import React from "react";
 
+import { Navbar, Nav, Container } from "react-bootstrap";
 import AppLogoImg from "../../../Assets/img/logo.png";
 
 const SectionOne = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light navbar-floating">
-      <div className="container">
-        <a className="navbar-brand" href="#">
+    <Navbar
+      className="navbar navbar-expand-lg navbar-light navbar-floating"
+      fixed="top"
+      expand="lg"
+    >
+      <Container>
+        <Navbar.Brand href="#home">
           <img src={AppLogoImg} alt="" width="240" />
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarToggler"
-          aria-controls="navbarToggler"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="ml-auto" />
 
-        <div className="collapse navbar-collapse" id="navbarToggler">
-          <ul className="navbar-nav ml-lg-5 mt-3 mt-lg-0">
-            <li className="nav-item dropdown active">
-              <a className="nav-link" href="#">
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                How it Work
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Feature
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Our Client
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Video
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Pricing
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Contact us
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav>
+            <Nav.Link>Home</Nav.Link>
+            <Nav.Link>How it Work</Nav.Link>
+            <Nav.Link>Feature</Nav.Link>
+            <Nav.Link>Our Client</Nav.Link>
+            <Nav.Link>Video</Nav.Link>
+            <Nav.Link>Pricing</Nav.Link>
+            <Nav.Link>Contact us</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 

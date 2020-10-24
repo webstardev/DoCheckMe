@@ -96,7 +96,7 @@ const StyledContainer = styled(Container)`
       max-width: 100%;
     }
     @media (max-width: 768px) {
-      display: none;
+      margin-top: 3rem;
     }
   }
   .hero-bg {

@@ -9,10 +9,10 @@ const SectionSix = () => {
   return (
     <ComponentContainer
       id="section-four"
-      className="page-section"
+      className="page-section py-5"
       style={{ backgroundImage: `url(${HeroBg})` }}
     >
-      <StyledContainer>
+      <StyledContainer className="py-5">
         <Title className="wow zoomIn">Our Client</Title>
         <Row>
           <Col
@@ -177,6 +177,10 @@ const StyledContainer = styled(Container)`
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  @media (max-width: 767px) {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
 `;
 

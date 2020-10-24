@@ -10,6 +10,7 @@ import SectionFour from "./Sections/SectionFour";
 import SectionFive from "./Sections/SectionFive";
 import SectionSix from "./Sections/SectionSix";
 import SectionSeven from "./Sections/SectionSeven";
+import SectionEight from "./Sections/SectionEight";
 import Footer from "./Sections/Footer";
 
 const HomePage = () => {
@@ -22,6 +23,7 @@ const HomePage = () => {
       <SectionFive />
       <SectionSix />
       <SectionSeven />
+      <SectionEight />
       <Footer />
     </>
   );

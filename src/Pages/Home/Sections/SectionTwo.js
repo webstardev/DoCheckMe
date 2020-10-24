@@ -1,6 +1,6 @@
 import React from "react";
 
-import BgHeroImg from "../../../Assets/img/bg_hero_1.png";
+import BgHeroImg from "../../../Assets/img/bg_hero_1_1.png";
 import AppPreviewImg from "../../../Assets/img/app_preview_1.png";
 
 const SectionTwo = () => {
@@ -20,7 +20,8 @@ const SectionTwo = () => {
                 <br />
               </p>
               <div className="input-box">
-                <input placeholder="Text Here / Input text" />
+                <span>Text Here / </span>
+                <input placeholder="Input text" />
                 <button>GO</button>
               </div>
             </div>

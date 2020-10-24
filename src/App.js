@@ -3,6 +3,7 @@ import "./App.css";
 
 import { WOW } from "wowjs";
 import HomePage from "./Pages/Home";
+import BgImg from "./Assets/img/top-bg.png";
 
 const App = () => {
   useEffect(() => {

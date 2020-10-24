@@ -2268,6 +2268,7 @@ hr {
 
 .hero-home-1 {
   overflow: hidden;
+  background-color: #dcecfe;
 }
 
 .hero-home-1 .mobile-preview {
@@ -2867,6 +2868,7 @@ hr {
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-nav .active > .nav-link {
   color: white;
+  font-size: 18px;
 }
 
 .bg_hero_1 {
@@ -2905,6 +2907,7 @@ hr {
 }
 
 .input-box {
+  position: relative;
   width: 100%;
   max-width: 530px;
   display: flex;
@@ -2913,17 +2916,27 @@ hr {
   border-radius: 4px;
   border: 1px solid #8767ff;
   box-shadow: 0px 22px 10px 2px rgba(135, 103, 255, 0.3);
+  font-size: 27px;
+}
+
+.input-box span {
+  position: absolute;
+  color: #000;
+  font-size: 27px;
+  padding-left: 12px;
+  line-height: 70px;
 }
 
 .input-box input {
   flex: 1 1 100%;
   border: none;
-  padding-left: 10px;
+  padding-left: 160px;
   padding-right: 10px;
+  width: 100%;
 }
 
 .input-box button {
-  flex: 1 0 108px;
+  flex: 0 0 108px;
   border: none;
   box-shadow: none;
   color: white;
@@ -2941,6 +2954,15 @@ hr {
     font-size: 1.5rem;
   }
 
+  .input-box input {
+    font-size: 20px;
+    padding-left: 123px;
+  }
+
+  .input-box span {
+    font-size: 20px;
+  }
+
   .input-box button {
     flex: 1 0 78px;
   }
@@ -2956,9 +2978,29 @@ hr {
 }
 
 #about-us {
+  background: url("../img/triangle-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  overflow: hidden;
+  background-position: bottom left;
+}
+
+#about-us .section-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   background: url("../img/bg-about-us.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #about-us {
+    background-size: 200% 100%;
+  }
 }
 
 #about-us .title {
@@ -3139,9 +3181,57 @@ hr {
 }
 #footer .social-link {
   max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+
+#footer .social-link a {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  #footer .footer-link {
+    flex-wrap: wrap;
+  }
+
+  #footer .footer-link li {
+    flex-wrap: wrap;
+    flex: 1 1 33.33%;
+  }
+
+  #footer .social-link img {
+    max-width: 40px;
+    max-height: 40px;
+  }
 }
 
 #copyright p {
   font-size: 1.1rem;
   color: #000;
 }
+
+.root-bg {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  top: 0;
+  width: 100%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+@media (max-width: 991px) {
+  .navbar-light .navbar-nav .nav-link,
+  .navbar-light .navbar-nav .active > .nav-link {
+    color: black;
+    text-align: center;
+  }
+}
+
+/* @media (max-width: 767px) {
+  .navbar-floating {
+    position: fixed;
+  }
+} */

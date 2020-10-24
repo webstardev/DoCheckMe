@@ -1,12 +1,14 @@
 import React from "react";
 
+import Section3Bg from "../../../Assets/img/triangle-bg.png";
 import AboutUsIcon1Img from "../../../Assets/img/about-us-icon1.png";
 import AboutUsIcon2Img from "../../../Assets/img/about-us-icon2.png";
 import AboutUsIcon3Img from "../../../Assets/img/about-us-icon3.png";
 
 const SectionThree = () => {
   return (
-    <div class="page-section mt-5" id="about-us">
+    <div class="page-section pt-5" id="about-us">
+      <div class="section-bg"></div>
       <div class="container">
         <div class="row">
           <div col="xs-12">
